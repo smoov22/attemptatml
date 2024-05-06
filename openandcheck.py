@@ -1,6 +1,5 @@
 import json
 import csv
-import random
 
 
 def check(number):
@@ -15,7 +14,7 @@ def check(number):
     domains = len(data['network']['domains']) #domains reached
     behaviors = len(data['behavior']['generic']) #Behaviors Observed
     processes = len(data['behavior']['processtree']) #Processes Spawned
-    print(data['behavior']['processtree'])
+    # print(data['behavior']['processtree'])
     returner = [httpreqs, dnsreqs, tcpreqs, domains, processes, behaviors]
     return returner
 
@@ -25,4 +24,5 @@ def main():
     number = input("Pick a number 11-405: ")
     print (check(str(number)))
 
-main()
+if __name__ == "__main__":
+    main()
