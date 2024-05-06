@@ -1,3 +1,7 @@
+'''KYLE MULLEN - CSEC 759 - 5/5/2024
+Checks personal library of analysed Cuckoo reports for a tuple of HTTP, DNS, TCP, and domains accessed by a piece of malware, 
+the number of observed behaviors, and the number of spawned processes'''
+
 import json
 import csv
 
